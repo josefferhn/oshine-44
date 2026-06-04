@@ -10,6 +10,7 @@
 	--fondo-gris:#fafafa;
 	--color-negro:#303132;
 	--fondo-footer:#121212;
+	--fondo-gradiente: linear-gradient(90deg,rgba(123, 64, 219, 1) 0%, rgba(52, 111, 231, 1) 100%);
 }
 body{
 	font-family: "Roboto", sans-serif;
@@ -28,7 +29,6 @@ h1,h2,h3,h4,h5,h6{
 
 
 #hero{
-	background-image: url("../img/v44-oshine-00.jpg");
 	background-size: cover;
 	background-position: center;
 	padding: 8% 0;
@@ -37,6 +37,16 @@ h1,h2,h3,h4,h5,h6{
 	background-color: rgba(0,0,0,0.50);
 	background-blend-mode: multiply;
 }
+.fondo-home{
+	background-image: url("../img/v44-oshine-00.jpg");
+}
+.fondo-about{
+	background-image: url("../img/bg-about.jpg");
+}
+.fondo-contact{
+	background-image: url("../img/bg-contact-us.jpg");
+}
+
 h1{
 	font-size: 70px;
 	font-weight: 800;
@@ -83,7 +93,7 @@ h1{
 }
 
 .btn-secondary{
-	background: linear-gradient(90deg,rgba(123, 64, 219, 1) 0%, rgba(52, 111, 231, 1) 100%);
+	background: var(--fondo-gradiente);
 	padding: 10px 20px;
 	border-radius: 0;
 	font-size: 13px;
@@ -149,6 +159,54 @@ footer a{
 footer a:hover{
 	color: var(--color-azul);
 }
+
+
+
+.contact-info-item{
+	text-align: center;
+}
+.contact-info-item h4{
+	font-size: 20px;
+}
+
+
+#contact-info .container{
+	background: var(--fondo-gradiente);
+	color: #fff;
+	margin-top: -100px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+.contact-icono{
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: rgba(255,255,255,0.20);
+	border-radius: 100%;
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+.contact-icono:hover{
+	background-color: #fff;
+	color: var(--color-azul);
+}
+
+
+#contact-map{
+	background-image: url("../img/footer-bg.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
 
 
 
