@@ -11,6 +11,8 @@
 	--color-negro:#303132;
 	--fondo-footer:#121212;
 	--fondo-gradiente: linear-gradient(90deg,rgba(123, 64, 219, 1) 0%, rgba(52, 111, 231, 1) 100%);
+	--fondo-brands:#151616;
+	--color-gris:#848991;
 }
 body{
 	font-family: "Roboto", sans-serif;
@@ -20,8 +22,11 @@ body{
 	line-height: 1.7;
 }
 header{
-	background-color: var(--fondo-header);
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0,0,0,0.50);
 	padding: 10px 0;
+	z-index: 10000;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: "Roboto", sans-serif;
@@ -45,6 +50,10 @@ h1,h2,h3,h4,h5,h6{
 }
 .fondo-contact{
 	background-image: url("../img/bg-contact-us.jpg");
+}
+
+.color-negro{
+	color: var(--color-negro);
 }
 
 h1{
@@ -199,11 +208,55 @@ footer a:hover{
 	background-size: cover;
 }
 
+.service-info{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 20px 30px;
+	color: #fff;
+	z-index: 200;
+}
+.overlay{
+	background-color: rgba(0,0,0,0.25);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+.service-layer{
+	overflow: hidden;
+	max-height: 300px;
+}
+.service-layer img{
+	transition: all 1.5s ease-in-out;
+}
+.service-layer:hover img{
+	transform: scale(1.3);
+	transition: all 1.5s ease-in-out;
+}
 
+.fondo-brands{
+	background-color: var(--fondo-brands);
+	text-align: center;
+}
 
+.brands-carousel img{
+	width: inherit !important;
+	display: inline !important;
+}
 
-
-
+.team-carousel h4{
+	color: var(--color-titulos);
+	font-size: 18px;
+	margin-top: 15px;
+}
+.team-carousel p{
+	color: var(--color-gris);
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
 
 
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home - Oshine 44 Modern Creative Agency</title>
+<title>Portfolio - Oshine 44 Modern Creative Agency</title>
 <link href="https://placehold.co/64x64/000000/FFF" rel="icon">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
@@ -14,9 +14,8 @@
 <meta name="Description" content="Página de Acerca de Oshine 44, dónde se describen las marcas que confían en nosotors y parte del equipo de trabajo">
 <meta name="Keywords" content="about us oshine 44, about oshine, team of oshine 44, oshine honduras, oshine">
 </head>
-
 <body>
-	
+
 	<header>
 		<div class="container-fluid">
 		
@@ -32,7 +31,7 @@
 			  <div class="collapse navbar-collapse" id="navbar">
 				<ul class="navbar-nav ms-auto">
 				  <li class="nav-item">
-					<a class="nav-link active" href="index.html">Home</a>
+					<a class="nav-link" href="index.html">Home</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="about-us.html">About Us</a>
@@ -41,7 +40,7 @@
 					<a class="nav-link" href="#">Blog</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="portfolio.html">Portfolio</a>
+					<a class="nav-link active" href="portfolio.html">Portfolio</a>
 				  </li>	
 				  <li class="nav-item">
 					<a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -65,69 +64,76 @@
 		</div>
 	</header>
 	
-	<section id="hero" class="fondo-home">
+	
+	<section id="hero" class="fondo-contact">
 		<div class="container">
-			<h4>Building brands on the web, since 2011</h4>
-			<h1>Creative Agency based out of London, UK</h1>
-			<a href="#" class="btn btn-primary">Start a Project</a>
+			<h4>Checkout our Portfolio</h4>
+			<h1>Seeing is believing</h1>
 		</div>
 	</section>
 	
-	<section id="about" class="section">
-		<div class="container-fluid p-0">
-			<div class="row align-items-center g-0">
-				<article class="col-lg-5 col-sm-6 col-12">
-					<div class="about-info">
-						<h2 class="titulo">Building brands on the web since 2011</h2>
-						<p>Oshine is fully compatible with the Woo Commerce, the most popular & free ecommerece plugin for wordpress. Showcase & Sell your products with beautiful product grids and individual product pages. </p>
-						<a href="#" class="btn btn-secondary">Learn More</a>
-					</div>					
-				</article>
-				<article class="col-lg-7 col-sm-6 col-12">
-					<img src="img/home-01.jpg" alt="home" class="img-fluid">
-				</article>
-			</div>			
-		</div>
-	</section>
 	
-	<section id="whatwedo" class="section fondo-gris">
+	<section id="porfolio" class="section">
 		<div class="container">
-			<div class="text-center">
-				<h2 class="titulo">What we do</h2>
-				<h4 class="subtitulo">We focus on creating clean, modern & responsive interfaces that not only look good but also work great.</h4>
-			</div>
-			
+		
 			<div class="row">
-				<article class="col-lg-4 col-sm-4 col-12">
-					<div class="info-icono">
-						<i class="fa-solid fa-binoculars icono"></i>
-						<h4 class="titulo-icono">Ideate</h4>
-						<p>We have crafted each demo with extensive care and the theme is power packed yet easy to use.</p>
+				<article class="col-lg-10 col-sm-6 col-12 offset-lg-1">
+					
+					<div id="workCarousel" class="carousel slide">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#workCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#workCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#workCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#workCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+						</div>
+						
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/work-01.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption">
+									<h2>App Mockup</h2>
+									<h6>Mobile - Web</h6>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/work-02.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption">
+									<h2>Aqua</h2>
+									<h6>Branding - Web</h6>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/work-03.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption">
+									<h2>Mobile App</h2>
+									<h6>Mobile</h6>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/work-04.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption">
+									<h2>Wnderlust</h2>
+									<h6>Mobile - Web</h6>
+								</div>
+							</div>
+						</div>
+						
+						<button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
-				</article>
-				<article class="col-lg-4 col-sm-4 col-12">
-					<div class="info-icono">
-						<i class="fa-solid fa-pencil icono"></i>
-						<h4 class="titulo-icono">Design</h4>
-						<p>We have crafted each demo with extensive care and the theme is power packed yet easy to use.</p>
-					</div>
-				</article>
-				<article class="col-lg-4 col-sm-4 col-12">
-					<div class="info-icono">
-						<i class="fa-solid fa-upload icono"></i>
-						<h4 class="titulo-icono">Publish</h4>
-						<p>We have crafted each demo with extensive care and the theme is power packed yet easy to use.</p>
-					</div>
+					
 				</article>
 			</div>
 			
-		</div>
+		</div>	
 	</section>
-	
-	
-	
-	
-	
+
 	<footer>
 		<div class="container-fluid">
 			<div class="row">
